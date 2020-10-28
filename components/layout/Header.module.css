@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  min-height: 100px;
+}
+
+.title {
+  font-size: var(--font-size-large);
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.logo {
+  margin-right: 12px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-normal);
+  font-weight: 600;
+}
+
+.nav a + a {
+  margin-left: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .title {
+    justify-content: center;
+  }
+
+  .nav {
+    font-size: var(--font-size-large);
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
